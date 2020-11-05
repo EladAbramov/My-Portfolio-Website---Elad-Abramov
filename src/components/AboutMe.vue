@@ -1,5 +1,5 @@
 <template>
-  <v-main class="about-me" id="about-me" style="height: 1100px">
+  <v-main class="about-me" id="about-me" style="height: 1000px">
     <v-container>
       <h3>
         About me
@@ -9,10 +9,7 @@
           Hi again, I'm Elad Abramov and I'm a software engineer. I was born in Israel, where I still live, but my dream was to travel. After completing my military service I made that dream come true by traveling throughout South America.
         </div>
         <div>
-          Once I returned from my travels, I decided to make another stop - this time in Germany, where I lived for a couple of years, met new people, and improved my language skills.
-        </div>
-        <div>
-          After college I started my career as a Fullstack Web Developer, and from there I continued developing for different platforms, using a variety of tools.
+          After college I started my career as a Android Developer, and from there I continued developing for different platforms, using a variety of tools.
         </div>
         <div>
           I'm a highly motivated person, fast learner and I always make sure to get the job done, no matter what obstacles I face.
@@ -65,8 +62,8 @@ h3 {
 
 .v-avatar {
   border-color: #f2a365 !important;
-  left: 730px;
-  bottom: 730px;
+  left: 750px;
+  bottom: 700px;
   border: 6px solid;
 }
 

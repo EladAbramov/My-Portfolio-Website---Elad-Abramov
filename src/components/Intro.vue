@@ -7,7 +7,7 @@
             Hello, I'm Elad Abramov
           </h1>
           <h2>
-            I'm a software developer
+            I'm a software developer :)
           </h2>
           <div class="text-center">
             <v-btn @click="scrollTo('about-me')" class="ma-2" outlined large dark tile>
