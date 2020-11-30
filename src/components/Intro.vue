@@ -1,5 +1,5 @@
 <template>
-  <v-main class="intro" id="intro" :style="dynamicColor" style="height: 750px">
+  <v-main class="intro" id="intro" :style="dynamicColor">
     <v-container>
       <v-row class="text-center">
         <v-col>
@@ -93,10 +93,10 @@
 .intro{
   background-size: 200% !important;
   background-position: 96.3517% center;
-  width: 100%;
-  height: 100vh;
+  width: 2000px!important;
   margin: 0;
   padding: 0;
+  height: 750px!important;
 }
   
 h1{
