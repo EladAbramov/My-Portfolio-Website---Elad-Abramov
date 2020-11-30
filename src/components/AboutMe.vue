@@ -50,6 +50,8 @@ export default {
 .about-me{
   background-color: #30475E;
   height: 1000px;
+  min-width: 1100px;
+
 }
 
 h3 {

@@ -73,6 +73,8 @@ export default {
     height: 1050px;
     justify-content: center;
     align-items: center;
+    min-width: 1100px;
+
 }
 
 @media (max-width: 900px) {

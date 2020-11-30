@@ -61,6 +61,8 @@ export default {
 .contact {
   background-color: #30475E;
   height: 650px;
+  min-width: 1100px;
+
 }
 
 @media (max-width: 600px) {

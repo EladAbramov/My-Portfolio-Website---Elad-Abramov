@@ -93,7 +93,7 @@
 .intro{
   background-size: 200% !important;
   background-position: 96.3517% center;
-  width: 2000px!important;
+  min-width: 1100px;
   margin: 0;
   padding: 0;
   height: 750px!important;
