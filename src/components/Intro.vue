@@ -1,5 +1,5 @@
 <template>
-  <v-main class="intro" id="intro" :style="dynamicColor" style="height: 750px width: 1000px">
+  <v-main class="intro" id="intro" :style="dynamicColor" style="height: 750px">
     <v-container>
       <v-row class="text-center">
         <v-col>

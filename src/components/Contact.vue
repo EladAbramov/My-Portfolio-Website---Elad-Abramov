@@ -78,6 +78,9 @@ export default {
   .linkedin-anchor {
     margin-left: 0px !important;
   }
+  .contact {
+    width: 1000px!important;
+  } 
 }
 
 h3 {
