@@ -32,7 +32,7 @@
         
       </div>
       <v-avatar>
-        <v-img src="../assets/me2.jpg" alt="elad"></v-img>
+        <v-img src="../assets/me3.png" alt="elad"></v-img>
       </v-avatar>
     </v-container>
   </v-main>
