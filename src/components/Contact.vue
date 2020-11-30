@@ -63,7 +63,7 @@ export default {
   height: 650px;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 100px) and (max-width: 900px) {
   h4{
     margin: 0px 0px 0px 0px !important;
   }
