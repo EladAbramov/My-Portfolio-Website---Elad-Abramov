@@ -1,5 +1,5 @@
 <template>
-  <v-main class="intro" id="intro" :style="dynamicColor" style="height: 750px">
+  <v-main class="intro" id="intro" :style="dynamicColor" style="height: 750px width: 1000px">
     <v-container>
       <v-row class="text-center">
         <v-col>
@@ -90,7 +90,7 @@
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
-#intro{
+.intro{
   background-size: 200% !important;
   background-position: 96.3517% center;
   width: 100%;
