@@ -65,7 +65,7 @@ export default {
 
 @media (min-width: 0px) and (max-width: 400px) {
   .contact {
-    min-width: 1100;
+    min-width: 1100px !important;
   }
 }
 
