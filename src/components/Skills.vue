@@ -121,8 +121,12 @@ export default {
 .skills {
   background-color: #222831;
   height: 1800px;
-  min-width: 1100px;
 
+}
+@media (min-width: 0px) and (max-width: 400px){
+  .skills {
+    min-width: 1100px;
+  }
 }
 @media (max-width: 900px) {
   .skills {

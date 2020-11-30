@@ -73,8 +73,11 @@ export default {
     height: 1050px;
     justify-content: center;
     align-items: center;
+}
+@media (min-width: 0px) and (max-width: 400px) {
+  .projects {
     min-width: 1100px;
-
+  }
 }
 
 @media (max-width: 900px) {

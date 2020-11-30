@@ -68,8 +68,12 @@ export default {
 .experience {
   background-color: #30475E;
   height: 1000px;
-  min-width: 1100px;
+}
 
+@media (min-width: 0px) and (max-width: 400px){
+  .experience {
+    min-width: 1100px;
+  }
 }
 
 @media (min-width: 550px) and (max-width: 900px) {

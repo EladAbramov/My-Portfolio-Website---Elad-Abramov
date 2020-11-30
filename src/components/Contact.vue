@@ -61,11 +61,15 @@ export default {
 .contact {
   background-color: #30475E;
   height: 650px;
-  min-width: 1100px;
-
 }
 
-@media (max-width: 600px) {
+@media (min-width: 0px) and (max-width: 400px) {
+  .contact {
+    min-width: 1100;
+  }
+}
+
+@media (max-width: 1100px) {
   h4{
     margin: 0px 0px 0px 0px !important;
   }

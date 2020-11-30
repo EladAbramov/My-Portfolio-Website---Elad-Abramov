@@ -93,12 +93,16 @@
 .intro{
   background-size: 200% !important;
   background-position: 96.3517% center;
-  min-width: 1100px;
   margin: 0;
   padding: 0;
   height: 750px!important;
 }
-  
+@media (min-width: 0px) and (max-width: 400px){
+  .intro{
+    min-width: 1100px!important;
+  }
+
+}  
 h1{
   line-height: 1.15;
   text-align: center;
