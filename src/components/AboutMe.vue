@@ -1,10 +1,10 @@
 <template>
-  <v-main class="about-me" id="about-me" style="height: 1000px">
+  <v-main class="about-me" id="about-me">
     <v-container>
-      <h3>
+      <h3 class="aboutme">
         About me
       </h3>
-      <div class="all" id="all" style="width: 550px">
+      <div class="all" id="all">
         <div>
           Hi again, I'm Elad Abramov and I'm a software engineer. I was born in Israel, where I still live, but my dream was to travel. After completing my military service I made that dream come true by traveling throughout South America.
         </div>
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="title-work" id="title-work">At Work</div>
-      <div class="at-work" id="at-work" style="width: 500px">
+      <div class="at-work" id="at-work">
         <div>
           I'm a strong communicator, UI/UX oriented and what drives me is my professionalism.
         </div>
@@ -25,13 +25,13 @@
         </div>
       </div>
       <div class="title-inlife" id="title-inlife">In Life</div>
-      <div class="at-inlife" id="at-inlife" style="width: 500px">
+      <div class="at-inlife" id="at-inlife" >
         <div>
-          Outside of work I'm a gamer - no matter the platform, a traveler - no matter the destination, and DIY is my passion.
+          Outside of work I'm a gamer, a traveler - no matter the destination, music lover and DIY is my passion.
         </div>
         
       </div>
-      <v-avatar size="300">
+      <v-avatar>
         <v-img src="../assets/me2.jpg" alt="elad"></v-img>
       </v-avatar>
     </v-container>
@@ -44,11 +44,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=Fira+Sans:wght@700&display=swap');
 
-#about-me{
-  background-color: #30475E
+.about-me{
+  background-color: #30475E;
+  height: 1000px;
 }
 
 h3 {
@@ -65,17 +66,92 @@ h3 {
   left: 750px;
   bottom: 700px;
   border: 6px solid;
+  height: 300px!important;
+  width: 300px!important;
+
 }
 
-#all{
+@media (min-width: 550px) and (max-width: 750px) {
+  .all{
+    width: 270px!important;
+  }
+  .at-work {
+    width: 270px!important;
+  }
+  .at-inlife {
+    width: 270px!important;
+  }
+  .v-avatar {
+    left: 380px;
+    bottom: 1100px;
+    height: 140px!important;
+    width: 140px!important;
+  }
+  .aboutme {
+    width: 300px!important;
+  }
+  .about-me{
+    height: 1500px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+  .all{
+    width: 350px!important;
+  }
+  .at-work {
+    width: 350px!important;
+  }
+  .at-inlife {
+    width: 350px!important;
+  }
+  .v-avatar {
+    left: 500px;
+    bottom: 950px;
+    height: 230px!important;
+    width: 230px!important;
+  }
+  .aboutme {
+    width: 300px!important;
+  }
+  .about-me{
+    height: 1200px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1250px) {
+  .all{
+    width: 450px!important;
+  }
+  .at-work {
+    width: 450px!important;
+
+  }
+  .at-inlife {
+    width: 450px!important;
+  }
+  .v-avatar {
+    left: 600px;
+    bottom: 750px;
+    height: 250px!important;
+    width: 250px!important;
+  }
+  .aboutme {
+    width: 300px!important;
+  }
+
+}
+
+.all{
   margin: 0 0 0 120px;
   line-height: 1.15;
   font-size: 20px;
   color: #fff;
+  width: 550px;
   font-family: 'Fira Mono', monospace;
 }
 
-#title-work {
+.title-work {
   margin: 20px 0 0 120px;
   color: #f2a365 !important;
   font-family: 'Courier New', Courier, monospace;
@@ -84,28 +160,30 @@ h3 {
   
 }
 
-#at-work {
+.at-work {
   margin: 0 0 0 120px;
   line-height: 1.15;
   font-size: 20px;
   color: #fff;
+  width: 550px;
   font-family: 'Fira Mono', monospace;
   flex-direction: column;
 }
 
-#title-inlife {
+.title-inlife {
   margin: 20px 0 0 120px;
   color: #f2a365 !important;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 900;
   font-size: 22px;
-  
+
 }
 
-#at-inlife {
+.at-inlife {
   margin: 0 0 0 120px;
   line-height: 1.15;
   font-size: 20px;
+  width: 550px;
   color: #fff;
   font-family: 'Fira Mono', monospace;
   flex-direction: column;

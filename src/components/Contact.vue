@@ -1,5 +1,5 @@
 <template>
-  <v-main class="contact" id="contact" style="height: 800px">
+  <v-main class="contact" id="contact">
     <v-container>
       <h3>
         Contact
@@ -58,8 +58,26 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
-#contact {
-    background-color: #30475E;
+.contact {
+  background-color: #30475E;
+  height: 650px;
+}
+
+@media (max-width: 900px) {
+  h4{
+    margin: 0px 0px 0px 0px !important;
+  }
+  .email {
+    margin: 0px 0px 0px 10px !important;
+  }
+  .author {
+    margin-left: 10px!important;
+    margin-top: 50px!important;
+  }
+  
+  .linkedin-anchor {
+    margin-left: 0px !important;
+  }
 }
 
 h3 {
@@ -142,7 +160,7 @@ h4{
 
 
 .v-app-bar {
-  top: 280px;
+  top: 150px;
   line-height: 1.15;
   height: 105px !important;
   background-color: #222831 !important;
@@ -168,7 +186,8 @@ h4{
   font-family: 'Roboto Mono', monospace;
   font-size: 24px;
   color: #eee;
-  white-space: initial}
+  white-space: initial
+}
 
 .name {
   color:#f2a365 !important;

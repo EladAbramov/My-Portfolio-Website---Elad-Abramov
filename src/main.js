@@ -3,8 +3,10 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import router from './router'
 import VueClipboards from 'vue-clipboards'
-Vue.config.productionTip = false
+import VueResizeObserver from "vue-resize-observer";
 
+Vue.config.productionTip = false
+Vue.use(VueResizeObserver);
 Vue.use(VueClipboards)
 
 

@@ -1,5 +1,5 @@
 <template>
-  <v-main class="projects" id="projects" style="height: 1200px">
+  <v-main class="projects" id="projects">
     <v-container>
       <h3>
         Projects
@@ -61,17 +61,32 @@ export default {
           'img': '',
           'description': 'memory game with cards'
         },
-        
       ],
     }
-  }
-
+  },
 }
 </script>
 
 <style scoped>
-#projects {
+.projects {
     background-color: #222831;
+    height: 1050px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+  h3 {
+    margin: 0px 20px 0px!important;
+  }
+  .first{
+    right: 100px!important;
+  }
+  .second{
+    right: 100px!important;
+  }
+
+ 
 }
 
 h3 {
@@ -79,12 +94,11 @@ h3 {
   font-size: 60px;
   color: #f2a365;
   font-family: 'Courier New', Courier, monospace;
-  margin: 50px 120px 50px;
-
+  margin: 0px 120px 50px;
 }
 .first{
-  margin-top: 50px;
   margin-left: 125px;
+  margin-top: 100px;
 }
 
 .second {

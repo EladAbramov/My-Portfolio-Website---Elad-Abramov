@@ -1,5 +1,5 @@
 <template>
-  <v-main class="experience" id="experience" style="height: 1200px">
+  <v-main class="experience" id="experience">
     <v-container>
         <h3>
           Work experience
@@ -60,13 +60,25 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
 
-#experience {
-    background-color: #30475E;
+.experience {
+  background-color: #30475E;
+  height: 1000px;
+}
+
+@media (min-width: 550px) and (max-width: 900px) {
+  h3 {
+    font-size: 44px!important;
+    width: 550px!important;
+    margin: 0px 20px 0px!important;
+  }
+  .first-exp {
+    left: 10px!important;
+  }
 }
 
 h3 {
@@ -79,7 +91,7 @@ h3 {
 }
 
 .first-exp {
-  max-width: 450px;
+  max-width: 500px;
   height: 300px;
   top: 50px;
   left: 110px;

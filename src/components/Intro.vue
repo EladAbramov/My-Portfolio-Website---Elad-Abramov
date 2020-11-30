@@ -130,10 +130,6 @@ h2{
   text-transform: none !important;
 }
 
-.card {
-  margin-top: 30px;
-}
-
 .v-icon {
   left: 10px;
   top: 1px;

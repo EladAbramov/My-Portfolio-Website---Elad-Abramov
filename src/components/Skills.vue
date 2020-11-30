@@ -1,5 +1,5 @@
 <template>
-  <v-main class="skills" id="skills" style="height: 1600px">
+  <v-main class="skills" id="skills">
     <v-container>
       <h4>
         Skills
@@ -117,9 +117,85 @@ export default {
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-#skills {
+
+.skills {
   background-color: #222831;
+  height: 1800px;
 }
+@media (max-width: 900px) {
+  .skills {
+    height: 1600px;
+  }
+  .first {
+    margin: 30px !important;
+    margin-left: 80px!important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .second {
+    margin: 30px !important; 
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .third {
+    margin: 30px !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .forth {
+    margin: 30px !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .first-name {
+    font-size: 16px !important;
+  }
+
+  .second-name {
+      font-size: 16px !important;
+  }
+  .third-name {
+    font-size: 16px !important;
+  }
+  .forth-name {
+    font-size: 16px !important;
+  }
+  .first-progress {
+    width: 75px !important;
+    left: 0px !important;  
+  }
+  .second-progress {
+    width: 75px !important;
+    left: 0px !important;  
+  }
+  
+ .third-progress {
+    width: 75px !important;
+    left: 0px !important;  
+  }
+  .forth-progress {
+    width: 75px !important;
+    left: 0px !important;  
+  }
+  .first-logo {
+    width: 45px !important;
+    height: 45px !important;
+  }
+  .second-logo {
+    width: 45px !important;
+    height: 45px !important;
+  }
+  .third-logo {
+    width: 45px !important;
+    height: 45px !important;
+  }
+  .forth-logo {
+    width: 45px !important;
+    height: 45px !important;
+  }
+ 
+}
+
 h4 {
   line-height: 1.15;
   font-size: 60px;
@@ -152,7 +228,7 @@ h1 {
   line-height: 1.15;
   flex-direction: column;
   margin: 30px;
-  margin-left: 350px;
+  margin-left: 400px;
   width: 150px;
   height: 130px;
 }
