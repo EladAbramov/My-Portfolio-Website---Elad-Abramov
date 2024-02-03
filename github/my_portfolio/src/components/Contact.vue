@@ -13,9 +13,9 @@
           <a class="linkedin" @click="goToLinkedin">LinkedIn</a>
           <span class="and"> and</span>
           <a class="github" @click="goToGithub"> GitHub</a>
-          <span class="pages"> pages.</span>
+          <span class="pages"> pages..</span>
         </h4>
-        
+
       </v-container>
     </v-container>
     <v-app-bar>
@@ -31,24 +31,24 @@
         <a @click="goToLinkedin" class="linkedin-anchor"></a>
         <a @click="goToGithub" class="github-anchor"></a>
       </div>
-  </v-app-bar>
+    </v-app-bar>
   </v-main>
 </template>
 
 <script>
 export default {
   name: 'Contact',
-  data(){
+  data() {
     return {
       link: 'eladsoftware20@gmail.com'
     }
 
   },
   methods: {
-    goToLinkedin(){
+    goToLinkedin() {
       window.open("https://www.linkedin.com/in/elad-abramov-427b97133/", "_blank");
     },
-     goToGithub(){
+    goToGithub() {
       window.open("https://github.com/EladAbramov", "_blank");
     }
   }
@@ -58,6 +58,7 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
 .contact {
   background-color: #30475E;
   height: 650px;
@@ -70,23 +71,26 @@ export default {
 }
 
 @media (max-width: 1100px) {
-  h4{
+  h4 {
     margin: 0px 0px 0px 0px !important;
   }
+
   .email {
     margin: 0px 0px 0px 10px !important;
   }
+
   .author {
-    margin-left: 10px!important;
-    margin-top: 50px!important;
+    margin-left: 10px !important;
+    margin-top: 50px !important;
   }
-  
+
   .linkedin-anchor {
     margin-left: 0px !important;
   }
+
   .contact {
-    width: 1000px!important;
-  } 
+    width: 1000px !important;
+  }
 }
 
 h3 {
@@ -100,7 +104,7 @@ h3 {
 
 .content-contact {
   margin: 0 110px 0;
-  font-size: 30px; 
+  font-size: 30px;
   color: #fff;
   font-family: 'Fira Mono', sans-serif;
 }
@@ -116,53 +120,55 @@ h3 {
 
 .copy-icon {
   left: 20px;
-    color: #f2a365 !important;
+  color: #f2a365 !important;
 
 }
 
 .content-contact-two {
   margin: 0 110px 0;
-  font-size: 30px; 
+  font-size: 30px;
   color: #fff;
   font-family: 'Fira Mono', sans-serif;
 }
 
-.linkedin{
+.linkedin {
   line-height: 1.15;
   font-size: 30px;
   font-family: 'Fira Mono', sans-serif;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
   color: #f2a365 !important;
   text-decoration: none;
   margin: 0px 0px 0px 0px;
 
 }
-.github{
+
+.github {
   line-height: 1.15;
   font-size: 30px;
   font-family: 'Fira Mono', sans-serif;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
   color: #f2a365 !important;
   text-decoration: none;
   margin: 0px 0px 0px 0px;
 }
-h4{
+
+h4 {
   margin: 0 120px 0;
-  font-size: 35px; 
+  font-size: 35px;
   color: #fff;
   font-family: 'Fira Mono', sans-serif;
 }
 
 .and {
-  font-size: 30px; 
+  font-size: 30px;
   color: #fff;
   font-family: 'Fira Mono', sans-serif;
 }
 
 .pages {
-  font-size: 30px; 
+  font-size: 30px;
   color: #fff;
   font-family: 'Fira Mono', sans-serif;
 }
@@ -199,10 +205,11 @@ h4{
 }
 
 .name {
-  color:#f2a365 !important;
+  color: #f2a365 !important;
   font-size: 24px;
 
 }
+
 .socails {
   line-height: 1.15;
   margin-left: 100px;
@@ -223,6 +230,7 @@ h4{
   margin-left: 350px;
   cursor: pointer;
 }
+
 .github-anchor {
   margin-top: 30px;
   line-height: 1.15;
@@ -234,11 +242,12 @@ h4{
   margin-left: 50px;
   cursor: pointer;
 }
+
 .linkedin-anchor:hover {
   background-color: #f2a365 !important;
 }
+
 .github-anchor:hover {
   background-color: #f2a365 !important;
 }
-
 </style>
